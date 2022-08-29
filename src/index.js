@@ -20,7 +20,7 @@ function game(gameName = 'brain-games', objective, gameRules) {
       round += 1;
     } else {
       console.log(
-        `${answer} is wrong ;( . Correct answer was ${correctAnswer}\nLet's try again, ${name}!`
+        `${answer} is wrong ;( . Correct answer was ${correctAnswer}\nLet's try again, ${name}!`,
       );
       return;
     }
