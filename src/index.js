@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
-function game(objective, gameRules) {
-  console.log('brain-games\nWelcome to the Brain Games!');
+function game(gameName = 'brain-games', objective, gameRules) {
+  console.log(`${gameName}\nWelcome to the Brain Games!`);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   console.log(objective);
@@ -20,7 +20,7 @@ function game(objective, gameRules) {
       round += 1;
     } else {
       console.log(
-        `${answer} is wrong ;( . Correct answer was ${correctAnswer}\nLet's try again, ${name}!`,
+        `${answer} is wrong ;( . Correct answer was ${correctAnswer}\nLet's try again, ${name}!`
       );
       return;
     }

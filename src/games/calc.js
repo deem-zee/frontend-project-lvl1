@@ -1,6 +1,8 @@
 import readlineSync from 'readline-sync';
 import { game, getRndInteger } from '../index.js';
 
+const gameName = 'brain-calc';
+
 const objective = 'What is the result of the expression?';
 
 function gameRules() {
@@ -23,4 +25,4 @@ function gameRules() {
   return [answer, correctAnswer];
 }
 
-export default () => game(objective, gameRules);
+export default () => game(gameName, objective, gameRules);
