@@ -3,8 +3,7 @@ import { game, getRndInteger } from '../index.js';
 
 const gameName = 'brain-prime';
 
-const objective =
-  'Answer "yes" if given number is prime. Otherwise answer "no"';
+const objective = 'Answer "yes" if given number is prime. Otherwise answer "no"';
 
 function gameRules() {
   const int = getRndInteger(1, 100);
