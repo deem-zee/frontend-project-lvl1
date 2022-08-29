@@ -1,11 +1,12 @@
-import { game, getRndInteger } from '../index.js';
 import readlineSync from 'readline-sync';
+import { game, getRndInteger } from '../index.js';
+
 const objective = 'What is the result of the expression?';
 
 function gameRules() {
-  let int1 = getRndInteger(1, 100);
-  let int2 = getRndInteger(1, 100);
-  let operand = ['+', '-', '*'][getRndInteger(0, 2)];
+  const int1 = getRndInteger(1, 100);
+  const int2 = getRndInteger(1, 100);
+  const operand = ['+', '-', '*'][getRndInteger(0, 2)];
   let correctAnswer = 0;
   if (operand === '+') {
     correctAnswer = int1 + int2;
@@ -16,10 +17,10 @@ function gameRules() {
   if (operand === '*') {
     correctAnswer = int1 * int2;
   }
-  let question = `${int1} ${operand} ${int2}`;
+  const question = `${int1} ${operand} ${int2}`;
   console.log(question);
-  let answer = Number(readlineSync.question('Your answer is: '));
+  const answer = Number(readlineSync.question('Your answer is: '));
   return [answer, correctAnswer];
 }
 
-game(objective, gameRules);
+export default () => game(objective, gameRules);

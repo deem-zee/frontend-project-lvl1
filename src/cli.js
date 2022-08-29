@@ -6,4 +6,4 @@ export default function greeting() {
   console.log(`Hello, ${name}!`);
   return name;
 }
-console.log(greeting())
+console.log(greeting());
