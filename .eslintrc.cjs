@@ -5,24 +5,24 @@ module.exports = {
     node: true,
   },
   extends: 'airbnb-base',
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
   rules: {
-    "no-console": 0,
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
-    "import/extensions": [
-      "error",
-      "ignorePackages",
+    'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
+    'no-console': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
       {
-        "js": "always",
+        js: 'always',
         // "jsx": "never",
         // "ts": "never",
         // "tsx": "never"
-      }
-   ],
+      },
+    ],
   },
 };
