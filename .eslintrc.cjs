@@ -13,7 +13,7 @@ module.exports = {
   rules: {
     'no-plusplus': [2, { allowForLoopAfterthoughts: true }],
     'no-console': 0,
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+
     'import/extensions': [
       'error',
       'ignorePackages',
