@@ -9,7 +9,7 @@ function gameRules() {
   const int = getRndInteger(1, 100);
   let correctAnswer = '';
   let count = 0;
-  for (let i = 2; i < int; i++) {
+  for (let i = 2; i < int; i += 1) {
     if (int % i === 0) {
       count += 1;
     }

@@ -11,7 +11,7 @@ function gameRules() {
   const missing = getRndInteger(0, 9);
   let correctAnswer = 0;
   const progression = [start];
-  for (let i = 1; i < 10; i++) {
+  for (let i = 1; i < 10; i += 1) {
     progression[i] = progression[i - 1] + step;
   }
   correctAnswer = progression[missing];

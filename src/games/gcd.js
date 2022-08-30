@@ -9,7 +9,7 @@ function gameRules() {
   const int1 = getRndInteger(1, 100);
   const int2 = getRndInteger(1, 100);
   let correctAnswer = 0;
-  for (let i = 1; i < Math.max(int1, int2); i++) {
+  for (let i = 1; i < Math.max(int1, int2); i += 1) {
     if (int1 % i === 0 && int2 % i === 0) {
       correctAnswer = i;
     }
