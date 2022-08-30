@@ -17,7 +17,7 @@ function gameRules() {
   correctAnswer = progression[missing];
   progression[missing] = '..';
   const question = `${progression}`;
-  console.log('Question: ' + question.split(',').join(' '));
+  console.log(`Question: ${question.split(',').join(' ')}`);
   const answer = Number(readlineSync.question('Your answer is: '));
   return [answer, correctAnswer];
 }
