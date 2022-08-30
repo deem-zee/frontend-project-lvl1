@@ -22,4 +22,4 @@ function gameRules() {
   return [answer, correctAnswer];
 }
 
-export default () => game(gameName, objective, gameRules);
+export default () => game(objective, gameRules, gameName);
