@@ -19,7 +19,7 @@ function gameRules() {
   if (operand === '*') {
     correctAnswer = int1 * int2;
   }
-  const question = `${int1} ${operand} ${int2}`;
+  const question = `Question: ${int1} ${operand} ${int2}`;
   console.log(question);
   const answer = Number(readlineSync.question('Your answer is: '));
   return [answer, correctAnswer];
